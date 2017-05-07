@@ -7,6 +7,7 @@ brews=(
   git
   htop
   macvim
+  mutt
   node
   postgresql
   pgcli
