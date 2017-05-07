@@ -19,55 +19,17 @@ brews=(
 )
 
 casks=(
-  adobe-reader
-  airdroid
-  atom
-  cakebrew
   cleanmymac
-  commander-one
-  datagrip
   docker
   dropbox
   firefox
-  geekbench
   google-chrome
-  google-drive
-  github-desktop
-  hosts
-  handbrake
-  intellij-idea
-  istat-menus
-  istat-server  
-  launchrocket
-  licecap
   iterm2
-  betterzipql
-  qlcolorcode
-  qlmarkdown
-  qlstephen
-  quicklook-json
-  quicklook-csv
-  macdown
-  microsoft-office
-  plex-home-theater
-  plex-media-server
-  private-eye
-  satellite-eyes
-  sidekick
   skype
   slack
-  sling
   spotify
-  steam
-  teleport
-  transmission
-  transmission-remote-gui
-  tunnelbear
-  visual-studio-code
   vlc
-  volumemixer
   webstorm
-  xquartz
 )
 
 gems=(
