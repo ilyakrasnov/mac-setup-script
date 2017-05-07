@@ -19,12 +19,21 @@ brews=(
 )
 
 casks=(
+  1password
+  alfred
+  anaconda
+  caffeine
   cleanmymac
   docker
   dropbox
   firefox
+  flux
   google-chrome
   iterm2
+  moneymoney
+  postman
+  private-internet-access
+  sourcetree
   skype
   slack
   spotify
