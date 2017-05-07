@@ -1,54 +1,21 @@
 #!/usr/bin/env bash
 
 brews=(
-  android-platform-tools
-  archey
-  aws-shell
-  cheat
   coreutils
   dfc
   findutils
-  fontconfig --universal
-  fpp
-  fzf
   git
-  git-extras
-  git-lfs
-  gnuplot --with-qt
-  gnu-sed --with-default-names
-  go
-  hh
   htop
-  httpie
-  iftop
-  imagemagick --with-webp
-  lighttpd
-  lnav
-  mackup
   macvim
-  mas
-  micro
-  moreutils
-  mtr
-  ncdu
-  nmap
   node
-  poppler
   postgresql
   pgcli
-  pv
   python
   python3
-  osquery
-  scala
-  sbt
-  stormssh
-  thefuck
   tmux
   tree
   trash
   vim --with-override-system-vi
-  wget --with-iri
 )
 
 casks=(
