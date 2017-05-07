@@ -103,26 +103,10 @@ casks=(
   xquartz
 )
 
-pips=(
-  pip
-  glances
-  ohmu
-  pythonpy
-)
-
 gems=(
   bundle
 )
 
-npms=(
-  fenix-cli
-  gitjk
-  kill-tabs
-  n
-  nuclide-installer
-)
-
-gpg_key='3E219504'
 git_configs=(
   "branch.autoSetupRebase always"
   "color.ui auto"
