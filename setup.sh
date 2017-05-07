@@ -17,6 +17,8 @@ brews=(
   tree
   trash
   vim --with-override-system-vi
+  zsh
+  zsh-completions
 )
 
 casks=(
@@ -88,19 +90,19 @@ function install {
   done
 }
 
-prompt "Update ruby"
-ruby -v
-brew install gpg
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable
-ruby_version='2.6.0'
-rvm install ${ruby_version}
-rvm use ${ruby_version} --default
-ruby -v
-sudo gem update --system
+#prompt "Update ruby"
+#ruby -v
+#brew install gpg
+#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+#curl -sSL https://get.rvm.io | bash -s stable
+#ruby_version='2.6.0'
+#rvm install ${ruby_version}
+#rvm use ${ruby_version} --default
+#ruby -v
+#sudo gem update --system
 
-prompt "Install Java"
-brew cask install java
+#prompt "Install Java"
+#brew cask install java
 
 prompt "Install packages"
 brew info ${brews[@]}
@@ -112,7 +114,6 @@ brew cask info ${casks[@]}
 install 'brew cask install' ${casks[@]}
 
 prompt "Installing secondary packages"
-install 'pip install --upgrade' ${pips[@]}
 install 'gem install' ${gems[@]}
 
 prompt "Upgrade bash"
@@ -129,18 +130,17 @@ for config in "${git_configs[@]}"
 do
   git config --global ${config}
 done
-gpg --keyserver hkp://pgp.mit.edu --recv ${gpg_key}
 
-prompt "Install mac CLI [NOTE: Say NO to bash-completions since we have fzf]!"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
+#prompt "Install mac CLI [NOTE: Say NO to bash-completions since we have fzf]!"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
 
-prompt "Update packages"
-pip3 install --upgrade pip setuptools wheel
-mac update
+#prompt "Update packages"
+#pip3 install --upgrade pip setuptools wheel
+#mac update
 
 prompt "Cleanup"
 brew cleanup
 brew cask cleanup
 
-read -p "Run `mackup restore` after DropBox has done syncing ..."
+#read -p "Run `mackup restore` after DropBox has done syncing ..."
 echo "Done!"
