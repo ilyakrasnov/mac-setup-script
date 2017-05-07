@@ -41,28 +41,6 @@ git_configs=(
   "user.email ilya.krasnov@gmail.com"
 )
 
-apms=(
-  atom-beautify
-  circle-ci
-  ensime
-  intellij-idea-keymap
-  language-scala
-  minimap
-)
-
-vscode=(
-  donjayamanne.python
-  dragos.scala-lsp
-  lukehoban.Go
-  ms-vscode.cpptools
-  rebornix.Ruby
-  redhat.java
-)
-
-fonts=(
-  font-source-code-pro
-)
-
 ######################################## End of app list ########################################
 set +e
 set -x
@@ -126,11 +104,6 @@ install 'brew cask install' ${casks[@]}
 prompt "Installing secondary packages"
 install 'pip install --upgrade' ${pips[@]}
 install 'gem install' ${gems[@]}
-install 'npm install --global' ${npms[@]}
-install 'apm install' ${apms[@]}
-install 'code --install-extension' ${vscode[@]}
-brew tap caskroom/fonts
-install 'brew cask install' ${fonts[@]}
 
 prompt "Upgrade bash"
 brew install bash
