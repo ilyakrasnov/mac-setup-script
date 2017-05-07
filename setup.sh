@@ -37,20 +37,8 @@ gems=(
 )
 
 git_configs=(
-  "branch.autoSetupRebase always"
-  "color.ui auto"
-  "core.autocrlf input"
-  "core.pager cat"
-  "credential.helper osxkeychain"
-  "merge.ff false"
-  "pull.rebase true"
-  "push.default simple"
-  "rebase.autostash true"
-  "rerere.autoUpdate true"
-  "rerere.enabled true"
-  "user.name pathikrit"
-  "user.email pathikritbhowmick@msn.com"
-  "user.signingkey ${gpg_key}"
+  "user.name ilyakrasnov"
+  "user.email ilya.krasnov@gmail.com"
 )
 
 apms=(
