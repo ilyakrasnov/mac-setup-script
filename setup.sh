@@ -37,6 +37,7 @@ casks=(
   postman
   private-internet-access
   sourcetree
+  sequel-pro
   skype
   slack
   spotify
