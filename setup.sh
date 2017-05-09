@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-# Mac Apps
-
-#"deckset: https://itunes.apple.com/us/app/deckset-turn-your-notes-into/id847496013?ls=1i\n\n"
-#"ulysses: https://itunes.apple.com/il/app/ulysses/id623795237?mt=12&ign-mpt=uo%3D4\n\n"
-#"bettersnaptool: https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12\n\n"
-#)
-
 brews=(
   coreutils
   dfc
@@ -115,19 +108,9 @@ do
   git config --global ${config}
 done
 
-#prompt "Install mac CLI [NOTE: Say NO to bash-completions since we have fzf]!"
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
-
-#prompt "Update packages"
-#pip3 install --upgrade pip setuptools wheel
-#mac update
 
 prompt "Cleanup"
 brew cleanup
 brew cask cleanup
 
-#echo "Now go install following apps:"
-#echo -e ${apps[@]}
-
-#read -p "Run `mackup restore` after DropBox has done syncing ..."
 echo "Done!"
