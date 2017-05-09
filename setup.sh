@@ -16,7 +16,7 @@ brews=(
   tmux
   tree
   trash
-  vim --with-override-system-vi
+  vim
   zsh
   zsh-completions
 )
@@ -90,20 +90,6 @@ function install {
   done
 }
 
-#prompt "Update ruby"
-#ruby -v
-#brew install gpg
-#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-#curl -sSL https://get.rvm.io | bash -s stable
-#ruby_version='2.6.0'
-#rvm install ${ruby_version}
-#rvm use ${ruby_version} --default
-#ruby -v
-#sudo gem update --system
-
-#prompt "Install Java"
-#brew cask install java
-
 prompt "Install packages"
 brew info ${brews[@]}
 install 'brew install' ${brews[@]}
@@ -115,15 +101,6 @@ install 'brew cask install' ${casks[@]}
 
 prompt "Installing secondary packages"
 install 'gem install' ${gems[@]}
-
-prompt "Upgrade bash"
-brew install bash
-sudo bash -c "echo $(brew --prefix)/bin/bash >> /private/etc/shells"
-mv ~/.bash_profile ~/.bash_profile_backup
-mv ~/.bashrc ~/.bashrc_backup
-mv ~/.gitconfig ~/.gitconfig_backup
-cd; curl -#L https://github.com/barryclark/bashstrap/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,screenshot.png}
-#source ~/.bash_profile
 
 prompt "Set git defaults"
 for config in "${git_configs[@]}"
