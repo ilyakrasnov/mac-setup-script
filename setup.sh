@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Mac Apps
+apps=(
+  deckset
+  ulysses
+  bettersnaptool
+)
+
 brews=(
   coreutils
   dfc
