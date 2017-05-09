@@ -7,13 +7,6 @@ apps=(
 "bettersnaptool: https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12\n\n"
 )
 
-# Mac Apps
-apps=(
-  deckset: https://itunes.apple.com/us/app/deckset-turn-your-notes-into/id847496013?ls=1
-  ulysses: https://itunes.apple.com/il/app/ulysses/id623795237?mt=12&ign-mpt=uo%3D4
-  bettersnaptool: https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12
-)
-
 brews=(
   coreutils
   dfc
