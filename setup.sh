@@ -31,12 +31,11 @@ casks=(
   firefox
   google-chrome
   iterm2
-  moneymoney
+  mysqlworkbench
   postman
   private-internet-access
   sourcetree
   sequel-pro
-  skype
   slack
   spotify
   vlc
