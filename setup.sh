@@ -96,7 +96,7 @@ install 'brew install' ${brews[@]}
 prompt "Install software"
 brew tap caskroom/versions
 brew cask info ${casks[@]}
-install 'brew install --cask' ${casks[@]}
+install 'brew cask install' ${casks[@]}
 
 prompt "Installing secondary packages"
 install 'gem install' ${gems[@]}
