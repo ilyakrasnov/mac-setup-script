@@ -1,10 +1,29 @@
 #!/usr/bin/env bash
+brews=(
+  coreutils
+  dfc
+  findutils
+  git
+  htop
+  macvim
+  mutt
+  node
+  postgresql
+  pgcli
+  python
+  python3
+  tmux
+  tree
+  trash
+  vim
+  zsh
+  zsh-completions
+)
 
 
 casks=(
   1password
   alfred
-  caffeine
   cleanmymac
   docker
   dropbox
@@ -20,7 +39,6 @@ casks=(
   spotify
   vlc
   vivaldi
-  webstorm
 )
 
 gems=(
