@@ -1,25 +1,5 @@
 #!/usr/bin/env bash
 
-brews=(
-  coreutils
-  dfc
-  findutils
-  git
-  htop
-  macvim
-  mutt
-  node
-  postgresql
-  pgcli
-  python
-  python3
-  tmux
-  tree
-  trash
-  vim
-  zsh
-  zsh-completions
-)
 
 casks=(
   1password
@@ -96,7 +76,7 @@ install 'brew install' ${brews[@]}
 prompt "Install software"
 brew tap caskroom/versions
 brew cask info ${casks[@]}
-install 'brew cask install' ${casks[@]}
+install 'brew install' ${casks[@]}
 
 prompt "Installing secondary packages"
 install 'gem install' ${gems[@]}
