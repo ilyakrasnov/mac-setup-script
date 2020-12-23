@@ -108,6 +108,5 @@ done
 
 prompt "Cleanup"
 brew cleanup
-brew cask cleanup
 
 echo "Done!"
