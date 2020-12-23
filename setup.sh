@@ -37,7 +37,6 @@ casks=(
   sequel-pro
   slack
   spotify
-  vlc
   vivaldi
 )
 
@@ -78,7 +77,8 @@ function install {
   for pkg in $@;
   do
     exec="$cmd $pkg"
-    prompt "Execute: $exec"
+    #prompt "Execute: $exec"
+    echo "Execute: $exec"
     if ${exec} ; then
       echo "Installed $pkg"
     else
